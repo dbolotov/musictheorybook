@@ -5,17 +5,16 @@ date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
-# url: your book url like https://bookdown.org/yihui/bookdown
-# cover-image: path to the social sharing image like images/cover.jpg
-description: |
-  Music theory notes.
+url: https://dbolotov.github.io/musictheorybook/
+# cover-image: images/cover.jpg
+description: "A set of notes on various music theory topics, focusing on jazz guitar. Includes examples in standard notation and guitar tab."
 link-citations: yes
-github-repo: rstudio/bookdown-demo
+github-repo: dbolotov/musictheorybook
 ---
 
 # About
 
-This is a set of notes and references on music theory, with guitar-focused examples.
+A set of notes on various music theory topics, focusing on jazz guitar. Includes examples in standard notation and guitar tab.
 
 ## License
 

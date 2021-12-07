@@ -1,0 +1,18 @@
+# Diatonic Chords
+
+Chords in scales are usually constructed using intervals of 3rds. E.g., in the C major scale (C, D, E, F, G, A, B), the C triad is constructed using C, E, G.
+
+## Major {-}
+- Note intervals: W W H W W W H
+- Triad qualities: maj, min, min, maj, maj, min, dim
+- 7th Chord qualities: Maj7, m7, m7, Maj7, dom7, min7, m7b5
+- Example in C: CMaj7, Dm7, Em7, FMaj7, G7, Am7, Bm7b5
+
+## Natural Minor {-}
+
+## Harmonic Minor {-}
+
+## Melodic Minor{-}
+
+Table: A simple table in Markdown.
+
