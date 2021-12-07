@@ -2,8 +2,7 @@ fig:nice-fig
 tab:nice-tab
 about
 license
-hello-bookdown
-a-section
+diatonic-chords
 cross
 chapters-and-sub-chapters
 captioned-figures-and-tables
