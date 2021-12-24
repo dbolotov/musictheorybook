@@ -1,18 +1,36 @@
 # Diatonic Chords
 
-Chords in scales are usually constructed using intervals of 3rds. E.g., in the C major scale (C, D, E, F, G, A, B), the C triad is constructed using C, E, G.
+Chords in the scales below are constructed using intervals of 3rds. E.g., in the C major scale (C, D, E, F, G, A, B), the C triad is constructed using C, E, G.
 
-## Major {-}
-- Note intervals: W W H W W W H
-- Triad qualities: maj, min, min, maj, maj, min, dim
-- 7th Chord qualities: Maj7, m7, m7, Maj7, dom7, min7, m7b5
-- Example in C: CMaj7, Dm7, Em7, FMaj7, G7, Am7, Bm7b5
+## Major Scale {-}
+The major scale contains the following intervals: W W H W W W H
 
-## Natural Minor {-}
 
-## Harmonic Minor {-}
+```{r echo=FALSE}
+library(kableExtra)
+odf <- t(data.frame(A = c("1", "2", "3", "4", "5", "6", "7"),
+                    B = c("I", "ii", "iii", "IV", "V", "vi", "vii\u00B0"),
+                    C = c("Tonic", "Supertonic", "Mediant", "Submediant", "Dominant", "Submediant", "Leading Tone"),
+                    D = c("maj", "min", "min", "maj", "maj", "min", "dim"),
+                    E = c("Maj7", "m7", "m7", "Maj7", "dom7", "min7", "m7b5"),
+                    G = c("CMaj7", "Dm7", "Em7", "FMaj7", "G7", "Am7", "Bm7b5")))
 
-## Melodic Minor{-}
+rownames(odf) <- c("Scale Notes", "Chord RNs", "Functional Names", "Triads", "7th Chords", "Example in C")
+
+odf %>%
+  kbl(caption = "Major Scale - Diatonic Chords",
+      align = "r", booktabs = TRUE) %>%
+  kable_styling(font_size = 13) %>%
+  column_spec(1, bold = TRUE)
+
+```
+
+
+## Natural Minor Scale {-}
+
+## Harmonic Minor Scale {-}
+
+## Melodic Minor Scale {-}
 
 Table: A simple table in Markdown.
 

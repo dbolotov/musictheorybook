@@ -4,9 +4,9 @@
 %
 \documentclass[
 ]{book}
-\title{A Minimal Book Example 2}
-\author{John Doe}
-\date{2021-12-05}
+\title{Music Theory Book}
+\author{dbolotov}
+\date{2021-12-23}
 
 \usepackage{amsmath,amssymb}
 \usepackage{lmodern}
@@ -40,8 +40,8 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
-  pdftitle={A Minimal Book Example 2},
-  pdfauthor={John Doe},
+  pdftitle={Music Theory Book},
+  pdfauthor={dbolotov},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
@@ -129,66 +129,47 @@
 \hypertarget{about}{%
 \chapter{About}\label{about}}
 
-This is a \emph{sample} book written in \textbf{Markdown}. You can use anything that Pandoc's Markdown supports; for example, a math equation \(a^2 + b^2 = c^2\).
+A set of notes on various music theory topics, focusing on jazz guitar. Includes examples in standard notation and guitar tab.
 
-\hypertarget{usage}{%
-\section{Usage}\label{usage}}
+\hypertarget{license}{%
+\section{License}\label{license}}
 
-Each \textbf{bookdown} chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter \emph{must} start with a first-level heading: \texttt{\#\ A\ good\ chapter}, and can contain one (and only one) first-level heading.
+This work is licensed under the \href{http://creativecommons.org/licenses/by-nc-sa/4.0/}{Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License}.
 
-Use second-level and higher headings within chapters like: \texttt{\#\#\ A\ short\ section} or \texttt{\#\#\#\ An\ even\ shorter\ section}.
+\hypertarget{diatonic-chords}{%
+\chapter{Diatonic Chords}\label{diatonic-chords}}
 
-The \texttt{index.Rmd} file is required, and is also your first book chapter. It will be the homepage when you render the book.
+Chords in scales are usually constructed using intervals of 3rds. E.g., in the C major scale (C, D, E, F, G, A, B), the C triad is constructed using C, E, G.
 
-\hypertarget{render-book}{%
-\section{Render book}\label{render-book}}
+\hypertarget{major}{%
+\section*{Major}\label{major}}
+\addcontentsline{toc}{section}{Major}
 
-You can render the HTML version of this example book without changing anything:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
+\begin{itemize}
+\tightlist
 \item
-  Find the \textbf{Build} pane in the RStudio IDE, and
+  Note intervals: W W H W W W H
 \item
-  Click on \textbf{Build Book}, then select your output format, or select ``All formats'' if you'd like to use multiple formats from the same book source files.
-\end{enumerate}
+  Triad qualities: maj, min, min, maj, maj, min, dim
+\item
+  7th Chord qualities: Maj7, m7, m7, Maj7, dom7, min7, m7b5
+\item
+  Example in C: CMaj7, Dm7, Em7, FMaj7, G7, Am7, Bm7b5
+\end{itemize}
 
-Or build the book from the R console:
+\hypertarget{natural-minor}{%
+\section*{Natural Minor}\label{natural-minor}}
+\addcontentsline{toc}{section}{Natural Minor}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{bookdown}\SpecialCharTok{::}\FunctionTok{render\_book}\NormalTok{()}
-\end{Highlighting}
-\end{Shaded}
+\hypertarget{harmonic-minor}{%
+\section*{Harmonic Minor}\label{harmonic-minor}}
+\addcontentsline{toc}{section}{Harmonic Minor}
 
-To render this example to PDF as a \texttt{bookdown::pdf\_book}, you'll need to install XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.org/tinytex/}.
+\hypertarget{melodic-minor}{%
+\section*{Melodic Minor}\label{melodic-minor}}
+\addcontentsline{toc}{section}{Melodic Minor}
 
-\hypertarget{preview-book}{%
-\section{Preview book}\label{preview-book}}
-
-As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in ``Preview book'', or from the R console:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{bookdown}\SpecialCharTok{::}\FunctionTok{serve\_book}\NormalTok{()}
-\end{Highlighting}
-\end{Shaded}
-
-\hypertarget{hello-bookdown}{%
-\chapter{Hello bookdown}\label{hello-bookdown}}
-
-All chapters start with a first-level heading followed by your chapter title, like the line above. There should be only one first-level heading (\texttt{\#}) per .Rmd file.
-
-\hypertarget{a-section}{%
-\section{A section}\label{a-section}}
-
-All chapter sections start with a second-level (\texttt{\#\#}) or higher heading followed by your section title, like the sections above and below here. You can have as many as you want within a chapter.
-
-\hypertarget{an-unnumbered-section}{%
-\subsection*{An unnumbered section}\label{an-unnumbered-section}}
-\addcontentsline{toc}{subsection}{An unnumbered section}
-
-Chapters and sections are numbered by default. To un-number a heading, add a \texttt{\{.unnumbered\}} or the shorter \texttt{\{-\}} at the end of the heading, like in this section.
+Table: A simple table in Markdown.
 
 \hypertarget{cross}{%
 \chapter{Cross-references}\label{cross}}

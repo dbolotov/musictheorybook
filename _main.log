@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (MiKTeX 2.9) (preloaded format=xelatex 2021.12.5)  5 DEC 2021 23:55
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (MiKTeX 2.9) (preloaded format=xelatex 2021.12.5)  23 DEC 2021 22:14
 entering extended mode
 **_main.tex
 (E:\documents\progr\music_theory_handbook\musictheorybook\_main.tex
@@ -136,7 +136,7 @@ l.14 \ifPDFTeX
 Here is how much of TeX's memory you used:
  1122 strings out of 427858
  12076 string characters out of 3149614
- 72615 words of memory out of 3000000
+ 72608 words of memory out of 3000000
  5137 multiletter control sequences out of 15000+200000
  3648 words of font info for 15 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
@@ -147,5 +147,5 @@ No pages of output.
 ! Fontconfig error: "C:\Users\db\AppData\Local\Programs\MiKTeX 2.9/fontconfig/config/conf.d/10-scale-bitmap-fonts.conf", line 72: non-double matrix element
 ! Fontconfig error: "C:\Users\db\AppData\Local\Programs\MiKTeX 2.9/fontconfig/config/conf.d/10-scale-bitmap-fonts.conf", line 72: non-double matrix element
 ! Fontconfig warning: "C:\Users\db\AppData\Local\Programs\MiKTeX 2.9/fontconfig/config/conf.d/10-scale-bitmap-fonts.conf", line 80: saw unknown, expected number
-! xelatex.exe: No Data
-! xelatex.exe: Data: get host by name failed in tcp_connect()
+! xelatex.exe: Cannot start MiKTeX package manager.
+! xelatex.exe: Data: The operation was canceled by the user.
