@@ -1,51 +1,74 @@
-# Diatonic Chords
+# Diatonic Chords in Common Scales
 
-Chords in the scales below are constructed using intervals of 3rds. E.g., in the C major scale (C, D, E, F, G, A, B), the C triad is constructed using C, E, G.
+This section lists triads and chords in the Major, and Minor scales. Chords in these scales are constructed using intervals of 3rds. E.g., in the C major scale (C, D, E, F, G, A, B), the C major 7 chord is constructed using C, E, G, B.
 
 
 ```{r echo=FALSE}
 library(kableExtra)
-odf <- t(data.frame(SFN = c("1", "2", "3", "4", "5", "6", "7"),
+
+display_dc_table <- function(odf, caption, ex_key, font_size) {
+  
+  rownames(odf) <- c("Scale Formula Nums", "Chord Roman Nums", "Functional Names",
+                     "Triads", "7th Chords", paste0("Example in ", ex_key))
+  
+  odf %>%
+    kbl(caption = caption, align = "r") %>%
+    kable_styling(font_size = font_size) %>%
+    column_spec(1, bold = TRUE) %>%
+    column_spec(1:8, border_right = T, border_left = T)
+}
+
+# Major
+maj_scale_df <- t(data.frame(SFN = c("1", "2", "3", "4", "5", "6", "7"),
                     CRN = c("I", "ii", "iii", "IV", "V", "vi", "vii\u00B0"),
                     FN = c("Tonic", "Supertonic", "Mediant", "Subdominant", "Dominant", "Submediant", "Leading Tone"),
                     Tr = c("maj", "min", "min", "maj", "maj", "min", "dim"),
                     SC = c("Maj7", "m7", "m7", "Maj7", "dom7", "min7", "m7b5"),
-                    Ex = c("CMaj7", "Dm7", "Em7", "FMaj7", "G7", "Am7", "Bm7b5")))
+                    EX = c("CMaj7", "Dm7", "Em7", "FMaj7", "G7", "Am7", "Bm7b5")))
 
-rownames(odf) <- c("Scale Formula Nums", "Chord Roman Nums", "Functional Names", "Triads", "7th Chords", "Example in C")
+display_dc_table(odf = maj_scale_df, caption = "Major Scale (W W H W W W H)",
+                 ex_key = "C", font_size = 12)
 
-odf %>%
-  kbl(caption = "Major Scale (WWHWWWH) - Diatonic Chords", align = "r") %>%
-  kable_styling(font_size = 12) %>%
-  column_spec(1, bold = TRUE)
+# Natural Minor
+nm_scale_df <- t(data.frame(SFN = c("1", "2", "b3", "4", "5", "b6", "b7"),
+                    CRN = c("i", "ii\u00B0", "III", "iv", "v", "VI", "VII"),
+                    FN = c("Tonic", "Supertonic", "Mediant", "Subdominant", "Dominant", "Submediant", "Subtonic"),
+                    Tr = c("min", "dim", "maj", "min", "min", "maj", "maj"),
+                    SC = c("m7", "m7b5", "Maj7", "m7", "m7", "maj7", "dom7"),
+                    EX = c("Am7", "Bm7", "CMaj7", "Dmin7", "Emin7", "FMaj7", "G7")))
+
+display_dc_table(odf = nm_scale_df,
+                 caption = "Natural Minor Scale (W H W W H W W)",
+                 ex_key = "A", font_size = 12)
+
+# Harmonic Minor
+hm_scale_df <- t(data.frame(SFN = c("1", "2", "b3", "4", "5", "b6", "7"),
+                    CRN = c("i", "ii\u00B0", "III+", "iv", "V", "VI", "vii\u00B0"),
+                    FN = c("Tonic", "Supertonic", "Mediant", "Subdominant", "Dominant", "Submediant", "Leading Tone"),
+                    Tr = c("min", "dim", "aug", "min", "maj", "maj", "dim"),
+                    SC = c("mMaj7", "m7b5", "Maj7#5", "m7", "dom7", "maj7", "dim7"),
+                    EX = c("AmMaj7", "Bm7b5", "CMaj7#5", "Dmin7", "E7", "FMaj7", "G#dim7")))
+
+display_dc_table(odf = hm_scale_df,
+                 caption = "Harmonic Minor Scale (W H W W H 3 H)",
+                 ex_key = "A", font_size = 12)
+
+# Melodic Minor
+mm_scale_df <- t(data.frame(SFN = c("1", "2", "b3", "4", "5", "6", "7"),
+                    CRN = c("i", "ii", "III+", "IV", "V", "vi\u00B0", "vii\u00B0"),
+                    FN = c("Tonic", "Supertonic", "Mediant", "Subdominant", "Dominant", "Submediant", "Leading Tone"),
+                    Tr = c("min", "min", "aug", "maj", "maj", "dim", "dim"),
+                    SC = c("mMaj7", "min7", "Maj7#5", "dom7", "dom7", "m7b5", "m7b5"),
+                    EX = c("AmMaj7", "Bmin7", "CMaj7#5", "Ddom7", "Edom7", "F#m7b5", "G#m7b5")))
+
+display_dc_table(odf = mm_scale_df,
+                 caption = "Melodic Minor Scale (W H W W W W H)",
+                 ex_key = "A", font_size = 12)
 
 ```
 
 
-```{r echo=FALSE}
-odf <- t(data.frame(A = c("1", "2", "b3", "4", "5", "b6", "b7"),
-                    B = c("i", "ii\u00B0", "III", "iv", "v", "VI", "VII"),
-                    C = c("Tonic", "Supertonic", "Mediant", "Subdominant", "Dominant", "Submediant", "Subtonic"),
-                    D = c("min", "dim", "maj", "min", "min", "maj", "maj"),
-                    E = c("m7", "m7b5", "Maj7", "m7", "m7", "maj7", "dom7"),
-                    G = c("Am7", "Bm7", "CMaj7", "Dmin7", "Emin7", "FMaj7", "G7")))
-
-rownames(odf) <- c("Scale Formula Nums", "Chord Roman Nums", "Functional Names", "Triads", "7th Chords", "Example in A")
-
-odf %>%
-  kbl(caption = "Natural Minor Scale (W H W W H W W) - Diatonic Chords", align = "r") %>%
-  kable_styling(font_size = 12) %>%
-  column_spec(1, bold = TRUE)
-
-```
-
-
-
-
-## Harmonic Minor Scale {-}
-
-## Melodic Minor Scale {-}
 
 ## References {-}
-- [Scale Comparison Chart](https://www.justinguitar.com/guitar-lessons/scale-comparison-chart-sc-150)
-
+- [Scale Comparison Chart (justinguitar.com)](https://www.justinguitar.com/guitar-lessons/scale-comparison-chart-sc-150)
+- [Chords in Keys (guitar-chords.org.uk)](https://www.guitar-chords.org.uk/chords-key-c.html)
