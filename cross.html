@@ -24,7 +24,7 @@
 <meta name="author" content="dbolotov" />
 
 
-<meta name="date" content="2021-12-07" />
+<meta name="date" content="2021-12-24" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -53,6 +53,8 @@
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 
 <style type="text/css">
@@ -141,10 +143,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#license"><i class="fa fa-check"></i><b>1.1</b> License</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="diatonic-chords.html"><a href="diatonic-chords.html"><i class="fa fa-check"></i><b>2</b> Diatonic Chords</a><ul>
-<li class="chapter" data-level="" data-path="diatonic-chords.html"><a href="diatonic-chords.html#major"><i class="fa fa-check"></i>Major</a></li>
-<li class="chapter" data-level="" data-path="diatonic-chords.html"><a href="diatonic-chords.html#natural-minor"><i class="fa fa-check"></i>Natural Minor</a></li>
-<li class="chapter" data-level="" data-path="diatonic-chords.html"><a href="diatonic-chords.html#harmonic-minor"><i class="fa fa-check"></i>Harmonic Minor</a></li>
-<li class="chapter" data-level="" data-path="diatonic-chords.html"><a href="diatonic-chords.html#melodic-minor"><i class="fa fa-check"></i>Melodic Minor</a></li>
+<li class="chapter" data-level="" data-path="diatonic-chords.html"><a href="diatonic-chords.html#major-scale"><i class="fa fa-check"></i>Major Scale</a></li>
+<li class="chapter" data-level="" data-path="diatonic-chords.html"><a href="diatonic-chords.html#natural-minor-scale"><i class="fa fa-check"></i>Natural Minor Scale</a></li>
+<li class="chapter" data-level="" data-path="diatonic-chords.html"><a href="diatonic-chords.html#harmonic-minor-scale"><i class="fa fa-check"></i>Harmonic Minor Scale</a></li>
+<li class="chapter" data-level="" data-path="diatonic-chords.html"><a href="diatonic-chords.html#melodic-minor-scale"><i class="fa fa-check"></i>Melodic Minor Scale</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="cross.html"><a href="cross.html"><i class="fa fa-check"></i><b>3</b> Cross-references</a><ul>
 <li class="chapter" data-level="3.1" data-path="cross.html"><a href="cross.html#chapters-and-sub-chapters"><i class="fa fa-check"></i><b>3.1</b> Chapters and sub-chapters</a></li>
@@ -207,53 +209,99 @@ Figure 3.1: Here is a nice figure!
 <span id="cb2-3"><a href="cross.html#cb2-3"></a>  <span class="dt">booktabs =</span> <span class="ot">TRUE</span></span>
 <span id="cb2-4"><a href="cross.html#cb2-4"></a>)</span></code></pre></div>
 <table>
-<caption><span id="tab:nice-tab">Table 3.1: </span>Here is a nice table!</caption>
+<caption>
+<span id="tab:nice-tab">Table 3.1: </span>Here is a nice table!
+</caption>
 <thead>
-<tr class="header">
-<th align="right">temperature</th>
-<th align="right">pressure</th>
+<tr>
+<th style="text-align:right;">
+temperature
+</th>
+<th style="text-align:right;">
+pressure
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="right">0</td>
-<td align="right">0.0002</td>
+<tr>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0.0002
+</td>
 </tr>
-<tr class="even">
-<td align="right">20</td>
-<td align="right">0.0012</td>
+<tr>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+0.0012
+</td>
 </tr>
-<tr class="odd">
-<td align="right">40</td>
-<td align="right">0.0060</td>
+<tr>
+<td style="text-align:right;">
+40
+</td>
+<td style="text-align:right;">
+0.0060
+</td>
 </tr>
-<tr class="even">
-<td align="right">60</td>
-<td align="right">0.0300</td>
+<tr>
+<td style="text-align:right;">
+60
+</td>
+<td style="text-align:right;">
+0.0300
+</td>
 </tr>
-<tr class="odd">
-<td align="right">80</td>
-<td align="right">0.0900</td>
+<tr>
+<td style="text-align:right;">
+80
+</td>
+<td style="text-align:right;">
+0.0900
+</td>
 </tr>
-<tr class="even">
-<td align="right">100</td>
-<td align="right">0.2700</td>
+<tr>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0.2700
+</td>
 </tr>
-<tr class="odd">
-<td align="right">120</td>
-<td align="right">0.7500</td>
+<tr>
+<td style="text-align:right;">
+120
+</td>
+<td style="text-align:right;">
+0.7500
+</td>
 </tr>
-<tr class="even">
-<td align="right">140</td>
-<td align="right">1.8500</td>
+<tr>
+<td style="text-align:right;">
+140
+</td>
+<td style="text-align:right;">
+1.8500
+</td>
 </tr>
-<tr class="odd">
-<td align="right">160</td>
-<td align="right">4.2000</td>
+<tr>
+<td style="text-align:right;">
+160
+</td>
+<td style="text-align:right;">
+4.2000
+</td>
 </tr>
-<tr class="even">
-<td align="right">180</td>
-<td align="right">8.8000</td>
+<tr>
+<td style="text-align:right;">
+180
+</td>
+<td style="text-align:right;">
+8.8000
+</td>
 </tr>
 </tbody>
 </table>
