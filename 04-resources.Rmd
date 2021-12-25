@@ -16,8 +16,10 @@
 
 - **Paid Courses**
   - [TrueFire](https://truefire.com/online-guitar-lessons/)
+  - [Discover Double Bass](https://discoverdoublebass.com/)
 
 - **Software**
-  - [Band In A Box](https://www.pgmusic.com/)
-  - [Transcribe!](https://www.seventhstring.com/)
-  - [Guitar Pro](https://www.guitar-pro.com/)
+  - [Band In A Box](https://www.pgmusic.com/) - software for creating backing tracks
+  - [Transcribe!](https://www.seventhstring.com/) - player for transcribing audio
+  - [Guitar Pro](https://www.guitar-pro.com/) - notation software for guitar & other instruments
+  - [Neck Diagrams](https://www.neckdiagrams.com/) - program to create neck diagrams for scales & chords
