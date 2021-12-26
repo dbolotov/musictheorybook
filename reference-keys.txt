@@ -1,3 +1,5 @@
 tab:unnamed-chunk-2
 diatonic-chords-in-common-scales
+chord-substitutions
+diatonic-substitutions-using-chord-degrees
 resources
