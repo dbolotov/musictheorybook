@@ -1,6 +1,10 @@
 tab:unnamed-chunk-2
 tab:unnamed-chunk-3
 diatonic-chords-in-common-scales
-chord-substitutions
-diatonic-substitutions-using-chord-degrees
+chord-superimposition-and-substitution
+diatonic-superimpositions-using-chord-degrees
+altered-scale-for-dominant-substitutions
+tritone-substitution
+adding-movement-to-a-chord
+references-1
 resources
