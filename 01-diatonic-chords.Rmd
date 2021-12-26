@@ -23,8 +23,8 @@ maj_scale_df <- t(data.frame(SFN = c("1", "2", "3", "4", "5", "6", "7"),
                     CRN = c("I", "ii", "iii", "IV", "V", "vi", "vii\u00B0"),
                     FN = c("Tonic", "Supertonic", "Mediant", "Subdominant", "Dominant", "Submediant", "Leading Tone"),
                     Tr = c("maj", "min", "min", "maj", "maj", "min", "dim"),
-                    SC = c("Maj7", "m7", "m7", "Maj7", "dom7", "min7", "m7b5"),
-                    EX = c("CMaj7", "Dm7", "Em7", "FMaj7", "G7", "Am7", "Bm7b5")))
+                    SC = c("maj7", "m7", "m7", "maj7", "dom7", "min7", "m7b5"),
+                    EX = c("Cmaj7", "Dm7", "Em7", "Fmaj7", "G7", "Am7", "Bm7b5")))
 
 display_dc_table(odf = maj_scale_df, caption = "Major Scale (W W H W W W H)",
                  ex_key = "C", font_size = 12)
@@ -34,8 +34,8 @@ nm_scale_df <- t(data.frame(SFN = c("1", "2", "b3", "4", "5", "b6", "b7"),
                     CRN = c("i", "ii\u00B0", "III", "iv", "v", "VI", "VII"),
                     FN = c("Tonic", "Supertonic", "Mediant", "Subdominant", "Dominant", "Submediant", "Subtonic"),
                     Tr = c("min", "dim", "maj", "min", "min", "maj", "maj"),
-                    SC = c("m7", "m7b5", "Maj7", "m7", "m7", "maj7", "dom7"),
-                    EX = c("Am7", "Bm7", "CMaj7", "Dmin7", "Emin7", "FMaj7", "G7")))
+                    SC = c("m7", "m7b5", "maj7", "m7", "m7", "maj7", "dom7"),
+                    EX = c("Am7", "Bm7", "Cmaj7", "Dmin7", "Emin7", "Fmaj7", "G7")))
 
 display_dc_table(odf = nm_scale_df,
                  caption = "Natural Minor Scale (W H W W H W W)",
@@ -46,8 +46,8 @@ hm_scale_df <- t(data.frame(SFN = c("1", "2", "b3", "4", "5", "b6", "7"),
                     CRN = c("i", "ii\u00B0", "III+", "iv", "V", "VI", "vii\u00B0"),
                     FN = c("Tonic", "Supertonic", "Mediant", "Subdominant", "Dominant", "Submediant", "Leading Tone"),
                     Tr = c("min", "dim", "aug", "min", "maj", "maj", "dim"),
-                    SC = c("mMaj7", "m7b5", "Maj7#5", "m7", "dom7", "maj7", "dim7"),
-                    EX = c("AmMaj7", "Bm7b5", "CMaj7#5", "Dmin7", "E7", "FMaj7", "G#dim7")))
+                    SC = c("mmaj7", "m7b5", "maj7#5", "m7", "dom7", "maj7", "dim7"),
+                    EX = c("Ammaj7", "Bm7b5", "Cmaj7#5", "Dmin7", "E7", "Fmaj7", "G#dim7")))
 
 display_dc_table(odf = hm_scale_df,
                  caption = "Harmonic Minor Scale (W H W W H 3 H)",
@@ -58,8 +58,8 @@ mm_scale_df <- t(data.frame(SFN = c("1", "2", "b3", "4", "5", "6", "7"),
                     CRN = c("i", "ii", "III+", "IV", "V", "vi\u00B0", "vii\u00B0"),
                     FN = c("Tonic", "Supertonic", "Mediant", "Subdominant", "Dominant", "Submediant", "Leading Tone"),
                     Tr = c("min", "min", "aug", "maj", "maj", "dim", "dim"),
-                    SC = c("mMaj7", "min7", "Maj7#5", "dom7", "dom7", "m7b5", "m7b5"),
-                    EX = c("AmMaj7", "Bmin7", "CMaj7#5", "Ddom7", "Edom7", "F#m7b5", "G#m7b5")))
+                    SC = c("mmaj7", "min7", "maj7#5", "dom7", "dom7", "m7b5", "m7b5"),
+                    EX = c("Ammaj7", "Bmin7", "Cmaj7#5", "D7", "E7", "F#m7b5", "G#m7b5")))
 
 display_dc_table(odf = mm_scale_df,
                  caption = "Melodic Minor Scale (W H W W W W H)",
