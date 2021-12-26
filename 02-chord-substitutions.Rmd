@@ -3,8 +3,41 @@
 ## Diatonic substitutions using chord degrees
 
 Diatonic substitutions are those where a chord is substituted with a chord from the same scale.
-These substitutions are built from degrees of the original chord, and are in the same scale. Such substitutions add extensions to a chord in order of the scale degrees. 
+The substitutions shown here are built from degrees of the original chord, and are in the same scale. Such substitutions add extensions to a chord in order of the scale degrees. 
 
 **Example 1: subs over Cmaj7 using the C major scale**: **Cmaj7** has the notes C, E, G, B. The sub built on the 3rd (E) is **Em7** (notes E, G, B, D). Playing **Em7** over **Cmaj7** adds a 9th to the original **Cmaj7**. Playing **G7** (G B D F) over **Cmaj7** adds the extensions 9 and 11, and playing **Bm7b5** (B, C, F, A) adds the extensions 9, 11, and 13.
 
 **Example 2: subs over Fmaj7 in the C major scale**: **Fmaj7** has the notes F, A, C, E. The sub built on the 3rd (A) is **Am7** (notes A, C, E, G). Playing **Am7** over **Fmaj7** adds a 9th to the original **Fmaj7**. However, playing **Cmaj7** (C E G B) over **Fmaj7** adds the notes G (9th) and B (#11), not 9th and 11. This is because the C major scale has a natural B, not a Bb, so using it for building the substitute chord yields the #11 extension.
+
+In the following table, "Scale Chord" is the original chord, "Subs built on chord tones" contains the diatonic chords built on the 3rd, 5th, and 7th (or flat 7th) degrees of the original chords, and "Ext. added" contains all the extensions added (the sub on 7th degree provides all 3 extensions). The other set of columns provides an example in G major. Concretely, for the scale chord ii (Am7 in G major scale), the diatonic chord built on the 5th degree is the vi chord of the parent scale (Em7 in G major), and playing vi over ii yields extensions 9 and 11.
+
+
+```{r echo=FALSE}
+display_sub_table <- function(odf, caption, font_size) {
+  
+  colnames(odf) <- c("Scale Chord", "3", "5", "7 (or b7)", "Ext. added", 
+                     "Scale Chord", "3", "5", "7 (or b7)")
+  
+  odf %>%
+    kbl(caption = caption, align = "r") %>%
+    kable_styling(font_size = font_size) %>%
+    column_spec(1, bold = TRUE) %>%
+    column_spec(1:9, border_right = T, border_left = T) %>%
+    add_header_above(c(" " = 1, "Subs built on chord tones" = 3, " " = 1,
+                       "Example in G major scale" = 4), background = "gray")
+}
+
+maj_scale_subs_df <- data.frame(SC = c("I", "ii", "IV", "V", "vi"),
+                    sub_3 = c("iii", "IV", "vi", "vii", "I"),
+                    sub_5 = c("V", "vi", "I", "ii", "iii"),
+                    sub_7 = c("vii", "I", "iii", "IV", "V"),
+                    exts = c("9, 11, 13", "9, 11, 13", "9, #11, 13", "9, 11, 13", "9, 11, b13"),
+                    CD = c("Gmaj7", "Am7", "Cmaj7", "D7", "Em7"),
+                    sub_3_ex = c("Bm7", "Cmaj7", "Em7", "F#m7b5", "Gmaj7"),
+                    sub_5_ex = c("D7", "Em7", "Gmaj7", "Am7", "Bm7"),
+                    sub_7_ex = c("F#m7b5", "Gmaj7", "Bm7", "Cmaj7", "D7"))
+
+display_sub_table(odf = maj_scale_subs_df, caption = "Diatonic Substitutions using Major Scale",
+                  font_size = 12)
+
+```
