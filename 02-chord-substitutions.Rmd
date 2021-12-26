@@ -1,30 +1,34 @@
-# Chord Substitutions
+# Chord Superimposition and Substitution
 
-## Diatonic substitutions using chord degrees
+### Note on superimposition vs substitution {-}
+- **Superimposition** refers to adding extensions to a chord by superimposing another chord from the same scale over the original. For example, playing Am7 over Dm7 adds extensions 9 and 11 to Dm7 (notes E and G).
+- **Substitution** refers to replacing the original chord by one from a different scale, with the goal of adding tension that will be resolved. For example, playing AbmMaj7 instead of G7 in the progression G7-C can be thought of as altering the G7 with b9 and #5 (notes Ab and Eb).
 
-Diatonic substitutions are those where a chord is substituted with a chord from the same scale.
-The substitutions shown here are built from degrees of the original chord, and are in the same scale. Such substitutions add extensions to a chord in order of the scale degrees. 
+## Diatonic superimpositions using chord degrees
 
-**Example 1: subs over Cmaj7 using the C major scale**: **Cmaj7** has the notes C, E, G, B. The sub built on the 3rd (E) is **Em7** (notes E, G, B, D). Playing **Em7** over **Cmaj7** adds a 9th to the original **Cmaj7**. Playing **G7** (G B D F) over **Cmaj7** adds the extensions 9 and 11, and playing **Bm7b5** (B, C, F, A) adds the extensions 9, 11, and 13.
+Diatonic superimpositions involve replacing a chord with another chord from the same scale.
+The replacement chords are built from degrees of the original chord, and are in the same parent scale (e.g. major). This replacement adds extensions to a chord in order of the scale degrees. 
 
-**Example 2: subs over Fmaj7 in the C major scale**: **Fmaj7** has the notes F, A, C, E. The sub built on the 3rd (A) is **Am7** (notes A, C, E, G). Playing **Am7** over **Fmaj7** adds a 9th to the original **Fmaj7**. However, playing **Cmaj7** (C E G B) over **Fmaj7** adds the notes G (9th) and B (#11), not 9th and 11. This is because the C major scale has a natural B, not a Bb, so using it for building the substitute chord yields the #11 extension.
+**Example 1: sups over Cmaj7 using the C major scale**: **Cmaj7** has the notes C, E, G, B. The chord built on the 3rd (E) is **Em7** (notes E, G, B, D). Playing **Em7** over **Cmaj7** adds a 9th to the original **Cmaj7**. Playing **G7** (G B D F) over **Cmaj7** adds the extensions 9 and 11, and playing **Bm7b5** (B, C, F, A) adds the extensions 9, 11, and 13.
 
-In the following table, "Scale Chord" is the original chord, "Subs built on chord tones" contains the diatonic chords built on the 3rd, 5th, and 7th (or flat 7th) degrees of the original chords, and "Ext. added" contains all the extensions added (the sub on 7th degree provides all 3 extensions). The other set of columns provides an example in G major. Concretely, for the scale chord ii (Am7 in G major scale), the diatonic chord built on the 5th degree is the vi chord of the parent scale (Em7 in G major), and playing vi over ii yields extensions 9 and 11.
+**Example 2: sups over Fmaj7 in the C major scale**: **Fmaj7** has the notes F, A, C, E. The chord built on the 3rd (A) is **Am7** (notes A, C, E, G). Playing **Am7** over **Fmaj7** adds a 9th to the original **Fmaj7**. However, playing **Cmaj7** (C E G B) over **Fmaj7** adds the notes G (9th) and B (#11), not 9th and 11. This is because the C major scale has a natural B, not a Bb, so using it for building the new chord yields the #11 extension.
+
+In the following two tables, "Scale Chord" is the original chord, "Subs built on chord tones" contains the diatonic chords built on the 3rd, 5th, and 7th (or flat 7th) degrees of the original chords, and "Extensions" contains all the extensions added (the sub on 7th degree provides all 3 extensions). The other set of columns provides an example in G. Concretely, for the scale chord ii (Am7 in G major scale), the diatonic chord built on the 5th degree is the vi chord of the parent scale (Em7 in G major), and playing vi over ii yields extensions 9 and 11.
 
 
 ```{r echo=FALSE}
 display_sub_table <- function(odf, caption, font_size) {
   
-  colnames(odf) <- c("Scale Chord", "3", "5", "7 (or b7)", "Ext. added", 
-                     "Scale Chord", "3", "5", "7 (or b7)")
+  colnames(odf) <- c("Scale Chord", "3", "5", "7 (or b7)", "Extensions", 
+                     "Scale Chord", "3", "5", "7 (or b7)", "Extensions")
   
   odf %>%
     kbl(caption = caption, align = "r") %>%
     kable_styling(font_size = font_size) %>%
     column_spec(1, bold = TRUE) %>%
-    column_spec(1:9, border_right = T, border_left = T) %>%
-    add_header_above(c(" " = 1, "Subs built on chord tones" = 3, " " = 1,
-                       "Example in G major scale" = 4), background = "gray")
+    column_spec(1:10, border_right = T, border_left = T) %>%
+    add_header_above(c(" " = 1, "Sups built on chord tones" = 3, " " = 1,
+                       "Example in G" = 5), background = "gray")
 }
 
 maj_scale_subs_df <- data.frame(SC = c("I", "ii", "IV", "V", "vi"),
@@ -35,9 +39,39 @@ maj_scale_subs_df <- data.frame(SC = c("I", "ii", "IV", "V", "vi"),
                     CD = c("Gmaj7", "Am7", "Cmaj7", "D7", "Em7"),
                     sub_3_ex = c("Bm7", "Cmaj7", "Em7", "F#m7b5", "Gmaj7"),
                     sub_5_ex = c("D7", "Em7", "Gmaj7", "Am7", "Bm7"),
-                    sub_7_ex = c("F#m7b5", "Gmaj7", "Bm7", "Cmaj7", "D7"))
+                    sub_7_ex = c("F#m7b5", "Gmaj7", "Bm7", "Cmaj7", "D7"),
+                    exts_ex = c("A, C, E", "B, D, F#", "D, F#, A", "E, G, B", "F#, A, C"))
 
-display_sub_table(odf = maj_scale_subs_df, caption = "Diatonic Substitutions using Major Scale",
+display_sub_table(odf = maj_scale_subs_df, caption = "Diatonic Substitutions with Major Scale",
+                  font_size = 12)
+
+
+hm_scale_subs_df <- data.frame(SC = c("imMaj7", "iim7b5", "iv", "V", "VI"),
+                    sub_3 = c("III#5", "iv", "VI", "vii\u00B07", "imMaj7"),
+                    sub_5 = c("V", "VI", "imMaj7", "iim7b5", "III#5"),
+                    sub_7 = c("vii\u00B07", "imMaj7", "III#5", "iv", "V"),
+                    exts = c("9, 11, 13", "b9, 11, 13", "9, #11, 13", "b9, 11, b13", "#9, #11, 13"),
+                    CD = c("GmMaj7", "Am7b5", "Cm7", "D7", "Ebmaj7"),
+                    sub_3_ex = c("Bbmaj7#5", "Cm7", "Ebmaj7", "F#dim\u00B07", "GmMaj7"),
+                    sub_5_ex = c("D7", "Emaj7", "GmMaj7", "Am7b5", "Bmaj7#5"),
+                    sub_7_ex = c("F#dim\u00B07", "GmMaj7", "Bbmaj7#5", "Cm7", "D7"),
+                    exts_ex = c("A, C, Eb", "Bb, D, F#", "D, F#, A", "Eb, G, Bb", "F#, A, C"))
+
+display_sub_table(odf = hm_scale_subs_df, caption = "Diatonic Substitutions with Harmonic Minor Scale",
                   font_size = 12)
 
 ```
+
+## Altered scale for dominant substitutions
+
+Chords from the Altered Scale (7th mode of Melodic Minor) can be used to alter a functioning dominant 7th chord. A functioning dominant is a chord that resolves a 4th up (or 5th down), to its I chord. For example, if G7 is followed by a C chord, the G7 is a functioning dominant. To get alterations for G7, play the G Altered Scale (7th mode of Melodic Minor) over G7.
+
+## Tritone substitution
+
+## Adding movement to a chord
+- Secondary dominants and ii chords
+- Barry Harris diminished approach
+
+
+## References
+- [Superposition vs Substitution, with example over F blues](https://www.jamieholroydguitar.com/chord-substitution-vs-chord-superimposition/)
