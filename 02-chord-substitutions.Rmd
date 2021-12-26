@@ -1,0 +1,10 @@
+# Chord Substitutions
+
+## Diatonic substitutions using chord degrees
+
+Diatonic substitutions are those where a chord is substituted with a chord from the same scale.
+These substitutions are built from degrees of the original chord, and are in the same scale. Such substitutions add extensions to a chord in order of the scale degrees. 
+
+**Example 1: subs over Cmaj7 using the C major scale**: **Cmaj7** has the notes C, E, G, B. The sub built on the 3rd (E) is **Em7** (notes E, G, B, D). Playing **Em7** over **Cmaj7** adds a 9th to the original **Cmaj7**. Playing **G7** (G B D F) over **Cmaj7** adds the extensions 9 and 11, and playing **Bm7b5** (B, C, F, A) adds the extensions 9, 11, and 13.
+
+**Example 2: subs over Fmaj7 in the C major scale**: **Fmaj7** has the notes F, A, C, E. The sub built on the 3rd (A) is **Am7** (notes A, C, E, G). Playing **Am7** over **Fmaj7** adds a 9th to the original **Fmaj7**. However, playing **Cmaj7** (C E G B) over **Fmaj7** adds the notes G (9th) and B (#11), not 9th and 11. This is because the C major scale has a natural B, not a Bb, so using it for building the substitute chord yields the #11 extension.
