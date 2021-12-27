@@ -1,5 +1,5 @@
 --- 
-title: "Music Theory Book"
+title: "Jazz Music Theory Reference"
 author: "DB"
 date: "`r Sys.Date()`"
 output: 
@@ -18,12 +18,16 @@ github-repo: dbolotov/musictheorybook
 
 # Preface {-}
 
-A set of condensed notes on various music theory topics, focusing on jazz and guitar.
+**About**
 
-## Disclaimer: Theory vs Sounding Good {-}
+This is a set of condensed notes on various music theory topics, focusing on jazz and guitar.
+
+**Disclaimer: Theory vs Sounding Good**
+
 Music theory is fun and can be used to try to understand why a particular chord progression or melody sounds the way it does, or how to approach soloing over a tune. But theory should not dictate what to play: things can sound great (or bad) despite what the theory says. It also seems that music theory doesn't always neatly describe everything that's going on. All this to say that not all of what's in here is useful, and some of it definitely goes into unnecessary detail.
 
-## License {-}
+**License**
+
 ![Creative Commons License](images/cc-by-nc-sa.png)  
 This work is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
