@@ -1,5 +1,7 @@
 # Chord Superimposition and Substitution
 
+This chapter attempts to organize information that has to do with playing a different chord than what is written on a chart or lead sheet. There seem to be many ways of thinking about this.
+
 ### Concepts and Terms {-}
 - **Soloing and Comping**
   - These concepts can be used both for soloing and harmony applications.

@@ -1,7 +1,7 @@
 [Music theory notes - online version](https://dbolotov.github.io/musictheorybook/)
 
 # About
-A set of notes on various music theory topics, focusing on jazz guitar. Includes examples in standard notation and guitar tab.
+A set of condensed notes on various music theory topics, focusing on jazz and guitar.
 
 # Implementation
 This project is created using R bookdown, and the rendered online version is hosted on GitHub Pages.

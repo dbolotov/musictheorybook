@@ -1,7 +1,11 @@
 --- 
 title: "Music Theory Book"
-author: "dbolotov"
+author: "DB"
 date: "`r Sys.Date()`"
+output: 
+  bookdown::gitbook:
+    config:
+      sharing: null
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -12,7 +16,7 @@ link-citations: yes
 github-repo: dbolotov/musictheorybook
 ---
 
-# About {-}
+# Preface {-}
 
 A set of condensed notes on various music theory topics, focusing on jazz and guitar.
 
@@ -20,7 +24,7 @@ A set of condensed notes on various music theory topics, focusing on jazz and gu
 Music theory is fun and can be used to try to understand why a particular chord progression or melody sounds the way it does, or how to approach soloing over a tune. But theory should not dictate what to play: things can sound great (or bad) despite what the theory says. It also seems that music theory doesn't always neatly describe everything that's going on. All this to say that not all of what's in here is useful, and some of it definitely goes into unnecessary detail.
 
 ## License {-}
-
+![Creative Commons License](images/cc-by-nc-sa.png)  
 This work is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 ```{r include=FALSE}

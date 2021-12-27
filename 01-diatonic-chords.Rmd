@@ -1,6 +1,6 @@
 # Diatonic Chords in Major and Minor Scales
 
-This section contains information about chords in the Major and Minor scales.
+This chapter contains information about chords in the Major and Minor scales.
 
 Chords in these scales are constructed using intervals of 3rds. E.g., in the C major scale (C, D, E, F, G, A, B), the C major 7 chord is constructed using C, E, G, B.
 
