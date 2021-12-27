@@ -16,8 +16,8 @@ github-repo: dbolotov/musictheorybook
 
 A set of condensed notes on various music theory topics, focusing on jazz and guitar.
 
-# Disclaimer: Music Theory vs Sounding Good {-}
-Music theory is fun and can be used to try to understand why a particular chord progression or melody sounds the way it does, or how to approach soloing over a tune. But theory should not dictate what to play, or that something *should* sound good because the theory says so. It also seems that music theory doesn't always neatly describe everything that's going on, and explanations break down from time to time.
+## Disclaimer: Theory vs Sounding Good {-}
+Music theory is fun and can be used to try to understand why a particular chord progression or melody sounds the way it does, or how to approach soloing over a tune. But theory should not dictate what to play: things can sound great (or bad) despite what the theory says. It also seems that music theory doesn't always neatly describe everything that's going on. All this to say that not all of what's in here is useful, and some of it definitely goes into unnecessary detail.
 
 ## License {-}
 

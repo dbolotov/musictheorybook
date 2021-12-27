@@ -108,7 +108,7 @@ While it is possible to use alterations on a dominant resolving to a minor chord
 **Example: G altered**: Playing the Ab Melodic Minor (G Altered Scale) over G7 yields the notes G, Ab, Bb, Cb, Bb, Db, Eb, F. This scale contains G, Cb, and F, which are the Root, 3rd, and b7 of G7. It also contains Ab and Bb (b9 and #9) and Db and Eb (b5 and #5). To add alterations to the harmony for G7, play chords from Ab Melodic Minor over the G7.
 
 
-The following table summarizes alterations created by substituting a dominant chord with substituting with chords from the related Melodic Minor Scale. "MM Chord" is the chord in Melodic Minor, and "MM Intervals" are the MM intervals in that chord. "V7alt Intervals" are the intervals of the same notes in relation to the dominant chord. "V7alt Chord" is the new chord created by playing the MM chord over the dominant. The last 3 columns contain examples over the G7 chord.
+The following table summarizes alterations created by substituting a dominant chord with chords from the related Melodic Minor Scale. "MM Chord" is the chord in Melodic Minor, and "MM Intervals" are the MM intervals in that chord. "V7alt Intervals" are the intervals of the same notes in relation to the dominant chord. "V7alt Chord" is the new chord created by playing the MM chord over the dominant. The last 3 columns contain examples over the G7 chord.
 
 ```{r echo=FALSE}
 alt_subs <- data.frame(MMC = c("imMaj7", "iim6", "iim7", "III#5", "IV7", "V7", "vim7b5", "viim7b5"),
@@ -137,12 +137,40 @@ display_sub_table(odf = alt_subs, caption = "Functioning Dominant Substitutions 
 
 ## Tritone substitution
 
-## Dominants b3 away
-A functioning dominant can be substituted by any other dominant that is located a multiple of minor 3rd away. Barry Harris refers to this as "playing with your sisters and brothers". Such substitutions yield interesting note choices, and are a different approach to alterations than using the Melodic Minor Scale.
+## Functioning Dominant Subsitions b3 Away
+A functioning dominant can be substituted by any other dominant that is located a multiple of a minor 3rd away. Barry Harris refers to this as "playing with your sisters and brothers". Such substitutions yield interesting note choices, and are a different approach to alterations than using the Melodic Minor Scale.
+
+One of the substituting dominant chords (b5 away) is the tritone sub.
+
+**Example 1: G7**: Building a dom7 chord on the b5 of G7 (2 multiples of b3 away) creates Db7, which contains the notes Db, F, Ab, B. These are b5, b7, b9, and 3 in reference to G7 - so substituting Db7 creates an altered G7 with b5 and b9.
+
+In the following table, "Sub Chord" is the substitute chord (with the first row simply being the original chord), "Orig. Chord Degrees" are the degrees of the sub in relation to the original chord, and the last two columns show examples over G7.
+
+```{r echo=FALSE}
+d7_b3_sub_df <- data.frame(TP = c("dom7 on R","dom7 on b3","dom7 on b5","dom7 on bb7"),
+                           D7F = c("R-3-5-b7","#9-5-b7-b9","b5-b7-b9-3","6-b9-3-5"),
+                           ex_d7 = c("G7","Bb7","Db7","E7"),
+                           ex_notes = c("G-B-D-F","Bb-D-F-Ab","Db-F-Ab-B","E-Ab-B-D"))
+
+display_sub_table(odf = d7_b3_sub_df, caption = "Functioning Dominant Subsitions b3 Away",
+                    cnames = c("Sub Chord", "Orig. Chord Degrees", "Sub Chord", "Notes"),
+                    abv_header = c(" " = 2, "Example in G" = 2),
+                    font_size = 12)
+
+```
+
+- Examples in progressions:
+  - **A7 - Dm7 - G7 - C -> Eb7 - Dm7 - Db7 - C**
+    - The A7 and G7 are replaced with dominants a tritone away, creating a descending chromatic progression.
+
+
 
 ## Adding movement to a chord
+Some ideas to add movement to chords.
+
 - **Secondary dominants and ii chords**
-  - Any 
+  - Major and minor chords (not m7b5) can be preceded by a **secondary dominant** - a dominant chord that resolves a 4th up (or 5th down). The secondary dominants (besides the main V) are not in the original scale, but can be played before their resolution chords to add interest. For example, the V chord in C Major is G7 (the dominant of Cmaj7); Dm7's secondary dominant is A7, Em7's is B7, and so on.
+  - Taking this further, a functioning dominant can be preceeded by its **ii** chord. Generally, the ii chord is minor 7 when resolving to major or maj7, and m7b5 when resolving to a minor, m7 or m6.
 
 - Barry Harris diminished approach
 
