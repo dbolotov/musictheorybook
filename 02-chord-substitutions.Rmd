@@ -1,22 +1,33 @@
 # Chord Substitution
 
-This chapter attempts to organize information that has to do with replacing chords with others. There seem to be many ways of thinking about this, and what follows describes just some of them.
+This chapter attempts to organize information that has to do with replacing chords with others. There are many different ways of thinking about this, and what follows describes just some of them.
 
 ## Concepts and Terms {-}
 - **Soloing and Comping**
-  - The concepts described here are used both for soloing and comping applications.
-  
+  - The concepts described here are used both for soloing and comping/harmony.
+
+- **Triads and 7th Chords**
+  - Most ideas here are illustrated using 7th chords. However, not every substitution has to use all notes from the new chord - the sub can be a triad, or a 2 note chord.
+
 - **Chord Superimposition and Chord Substitution**
   - **Superposition** refers to adding extensions to a chord by superimposing another chord from the same scale over the original. For example, playing Am7 over Dm7 adds extensions 9 and 11 to Dm7 (notes E and G).
+
   - **Substitution** refers to replacing the original chord by one from a different scale, frequently with the goal of adding tension that will be resolved. For example, playing AbmMaj7 instead of G7 in the progression G7-C can be thought of as altering the G7 with b9 and #5 (notes Ab and Eb).
 
 - **Functioning and Static Dominant Chords**
-  - A **functioning dominant** is a dominant chord that resolves a 4th up (or 5th down), to its I chord. For example, if G7 is followed by a C chord, the G7 is a functioning dominant.
-  - A **static dominant** is a dominant chord that does not resolve to its I. For example, if G7 is followed by E7, the G7 is a static dominant.
+  - A **functioning dominant** is a dominant chord that resolves a 4th up (or 5th down), to its I (or i) chord. For example, if G7 is followed by a C chord, the G7 is a functioning dominant.
+  - A **static dominant** is a dominant chord that does not resolve in the same way. For example, if G7 is followed by F7, the G7 is a static dominant.
 
-- **Triads and 7th Chords**
-  - The concepts in this section are illustrated mostly using 7th chords. However, not every substitution has to use all notes from the new chord - the sub can be a triad, or a 2 note chord.
-  
+- **Alterations and Extensions**
+  - A chord is altered when one or more of its notes is raised or lowered 1/2 step. These new notes are not in the chord's diatonic scale.
+  - A chord is extended when notes are added to it from its diatonic scale.
+
+- **Altered Dominants**
+  - An altered dominant 7th chord contains the R, 3, and b7 notes, and one or more altered notes (notes that are raised or lowered by 1/2 step): b9, #9, b5, #5.
+
+- **Dominant Resolving to Major or Minor**
+  - In major V7-I progressions, alterations on the dominant come from outside the parent Major Scale (e.g. using the Altered Scale). In minor V7-i, alterations on the dominant come from its parent Harmonic Minor Scale, and are actually extensions. While it is not illegal to use the Altered Scale to generate alterations in a a minor V-i, it is much more common to use Harmonic Minor. This is because in a minor V7-i in jazz, the V7 harmony usually comes from Harmonic Minor (and not Natural Minor, where the V would not be a dominant chord).  
+
 
 ## Diatonic Superimpositions {-}
 
@@ -25,7 +36,9 @@ The replacement chords are built from degrees of the original chord, and are in 
 
 Superimpositions are an alternative way, or maybe a shorthand, of thinking about chords with extensions. Instead of thinking "Dm13" to create a minor 13 sound over Dm7, one might think "Cmaj7" and play Cmaj7 over Dm7, creating the minor 13 sound.
 
-A superposition built on the 3rd of the original chord is also called "3-to-9", since the 3rd, 5th, 7th, and 9th of the original chord are now being played. 
+A superposition built on the 3rd of the original chord is also called "3-to-9", since the 3rd, 5th, 7th, and 9th of the original chord are now being played.
+
+It seems to be common in Jazz to omit the natural 11th in major and dominant chords because it conflicts with the major 3rd. E.g., a D13 would actually be played as D7 with the 9th and 13th.
 
 - **Example 1: Superpositions over Cmaj7 in C Major**
   - **Cmaj7** has the notes C, E, G, B. The chord built on the 3rd (E) is **Em7** (notes E, G, B, D). Playing **Em7** over **Cmaj7** adds a 9th to the original **Cmaj7**, making it into **Cmaj9**. Playing **G7** (G B D F) over **Cmaj7** adds the extensions 9 and 11, and playing **Bm7b5** (B, C, F, A) adds the extensions 9, 11, and 13.
@@ -89,25 +102,31 @@ display_sub_table(odf = hm_scale_sups_df, caption = "Diatonic Substitutions with
   - **In C minor: Dm7b5 - G7 - Cm6 -> Fm7 - Bdim - Cm6**
     - Fm7 starts on the 3rd of Dm7b5, Bdim starts on the 3rd of G7.
     - The result is equivalent to **Dm9b5 - G9 - Cm6**.
-    
-## Melodic Minor for Functioning Dominants {-}
 
-Chords from the 7th mode of the Melodic Minor Scale (Altered Scale) can be used to add tension to a functioning dominant 7th chord.
+## Functioning Dominant Substitutions {-}
 
-The Altered Scale played over the V yields the following chord degrees (relative to the V): R, b9, #9, 3, b5, #5, b7. This scale thus introduces 4 new notes to the G7 chord - b9 and #9 instead of the 9th, and b5 and #5 instead of the 5th. Chords from the Altered Scale contain the alterations in various combinations. 
-The notes of the Altered Scale for a dominant are the same as the notes of the Melodic Minor Scale 1/2 step up from the dominant root. E.g., the G Altered Scale is Ab Melodic Minor.
+In Jazz, functioning dominant 7th chords are frequently played differently than written on a lead sheet,  to add tension and interest.
 
-While it is possible to use alterations on a dominant resolving to a minor chord, tension in such dominant chords is created by adding notes from the Harmonic Minor or other scales (e.g. C Harmonic Minor over G7 in the progression G7-Cm).
+Using alterations (described in the **Altered Scale** section) is a standard way to add tension, and one way of remembering these alterations is to simply memorize voicings that contain them. Another way is to use chord substitutions - similarly to supersimpositions, we can use familiar shapes to generate new voicings.
 
-- **Example: G altered**
-  - Playing the Ab Melodic Minor (G Altered Scale) over G7 yields the notes G, Ab, Bb, Cb, Bb, Db, Eb, F. This scale contains G, Cb, and F, which are the Root, 3rd, and b7 of G7. It also contains Ab and Bb (b9 and #9) and Db and Eb (b5 and #5). To add alterations to the harmony for G7, play chords from Ab Melodic Minor over the G7.
+### Altered Scale {-}
 
+Chords from the Altered Scale (7th mode of the Melodic Minor Scale) can be used to alter a functioning dominant 7th chord in a major V7-I progression.
+
+The Altered Scale played over its related dominant chord yields the following chord degrees relative to the dominant: R, b9, #9, 3, b5, #5, b7. This scale thus alters the 9th and the 5th of the chord - b9 and #9 instead of 9, and b5 and #5 instead of 5. 
+
+The notes of the Altered Scale for a dominant are the same as the notes of the Melodic Minor Scale 1/2 step up from the dominant root (the Altered Scale is equivalent to the 7th mode of Melodic Minor). E.g., the G Altered Scale has the same notes as Ab Melodic Minor.
+
+Chords constructed using the Altered Scale contain the alterations in various combinations.
+
+- **Example: G7alt**
+  - Playing the Ab Melodic Minor (G Altered Scale) over G7 yields the notes G, Ab, Bb, Cb, Bb, Db, Eb, F. This scale contains G, Cb, and F, which are the Root, 3rd, and b7 of G7. It also contains Ab and Bb (b9 and #9) and Db and Eb (b5 and #5). To use alterations over the harmony for G7, play chords from Ab Melodic Minor over the G7.
 
 The following table summarizes alterations created by substituting a dominant chord with chords from the related Melodic Minor Scale. "MM Chord" is the chord in Melodic Minor, and "MM Intervals" are the MM intervals in that chord. "V7alt Intervals" are the intervals of the same notes in relation to the dominant chord. "V7alt Chord" is the new chord created by playing the MM chord over the dominant. The last 3 columns contain examples over the G7 chord.
 
 ```{r echo=FALSE}
 alt_subs <- data.frame(MMC = c("imMaj7", "iim6", "iim7", "III#5", "IV7", "V7", "vim7b5", "viim7b5"),
-                    MMint = c("R-b3-5-w7", "R-b3-5-6", "R-b3-5-b7", "R-3-#5-7", "R-3-5-b7", "R-3-5-b7", "R-b3-b5-b7", "R-b3-b5-b7"),
+                    MMint = c("R-b3-5-7", "R-b3-5-6", "R-b3-5-b7", "R-3-#5-7", "R-3-5-b7", "R-3-5-b7", "R-b3-b5-b7", "R-b3-b5-b7"),
                     V7int = c("b9-3-#5-R", "b9-3-#5-b7", "#9-b5-b7-b9", "3-#5-R-#9", "b5-b7-b9-3", "#5-R-#9-b5", "b7-b9-3-#5", "R-#9-b5-b7"),
                     V7ch = c("V7b9#5", "V7b9#5", "V7b9#9b5", "V7#9#5", "V7b9b5", "V7#9b5#5", "V7b9#5", "V7#9b5"),
                     ex_MMC = c("AbmMaj7", "Abm6", "Bbm7", "BMaj7#5", "Db7", "Eb7", "Fm7b5", "Gm7b5"),
@@ -121,23 +140,26 @@ display_sub_table(odf = alt_subs, caption = "Functioning Dominant Substitutions 
                     abv_header = c(" " = 4, "Example in G" = 3),
                     font_size = 12)
 
+# - **Note on Resolutions to Major and Minor:** While it is not illegal to use alterations on a dominant resolving to a minor i chord, tension in such dominants is usually created by adding extensions from the Harmonic Minor Scale. For example, in the progression D7-Gm, superimposing F#dim7 from Gm Harmonic Minor over D7 creates a D7b9 sound. This is because in a minor V7-i in jazz, the V7 harmony usually comes from Harmonic Minor (and not Natural Minor, where the V would not be a dominant chord). To summarize: in major V7-I, alterations on the dominant come from outside the parent Major Scale, while in minor V7-i, they come from the parent Harmonic Minor Scale (and are extensions). 
+
+
 ```
 
 - **Examples in Progressions**
   - **In C major: Dm7 - G7 - C6 -> Dm7 - Abm6 - C6**
     - Abm6 contains b9 and #5.
   - **In Bb major: F7 - Bbmaj7 -> D7 - Bbmaj7**
-    - F7 contains #9, b5, and #5.
+    - D7 contains #9, b5, and #5.
     
 
-## Tritone substitution {-}
+### Tritone {-}
 
 - **Examples in Progressions**
   - **A7 - Dm7 - G7 - C -> Eb7 - Dm7 - Db7 - C**
     - The A7 and G7 are replaced with dominants a tritone away, creating a descending chromatic progression.
 
-## Functioning Dominant Substitutions b3 Away {-}
-A functioning dominant can be substituted by any other dominant that is located a multiple of a minor 3rd away. Barry Harris refers to this as "playing with your sisters and brothers". Such substitutions yield interesting note choices, and are a different approach to alterations than using the Melodic Minor Scale.
+### Dominants b3 Away {-}
+A functioning dominant can be substituted by any other dominant that is located a multiple of a minor 3rd away. Barry Harris refers to this as "playing with your sisters and brothers". This is a different wa of thinking about alterations than using the Altered Scale.
 
 One of the substituting dominant chords (b5 away) is the tritone sub.
 
@@ -167,11 +189,19 @@ display_sub_table(odf = d7_b3_sub_df, caption = "Functioning Dominant Substituti
 
 
 ## Adding movement to a chord {-}
-Some ideas to add movement to chords.
+This section describes a different approach to substitutions - instead of replacing a chord with another chord, insert other chords before the original chord, breaking up how long the original chord lasts.
 
-- **Secondary dominants and ii chords**
-  - Major and minor chords (not m7b5) can be preceded by a **secondary dominant** - a dominant chord that resolves a 4th up (or 5th down). The secondary dominants (besides the main V) are not in the original scale, but can be played before their resolution chords to add interest. For example, the V chord in C Major is G7 (the dominant of Cmaj7); Dm7's secondary dominant is A7, Em7's is B7, and so on.
-  - Taking this further, a functioning dominant can be preceeded by its **ii** chord. Generally, the ii chord is minor 7 when resolving to major or maj7, and m7b5 when resolving to a minor, m7 or m6.
+### Secondary dominants and ii chords {-}
+  - Major, minor, and dominant chords (not m7b5) can be preceded by a secondary dominant - a dominant chord that resolves a 4th up (or 5th down). The secondary dominants (besides the main V) are not in the original scale, but can be played before their resolution chords to add interest. For example, the V chord in C Major is G7 (the dominant of Cmaj7); Dm7's secondary dominant is A7, Em7's is B7, and so on.
+  - Taking this further, a functioning dominant can be preceeded by its ii chord. This can also be combined with a tritone sub on the dominant - the ii is now relative to the tritone. Generally, the ii chord is minor 7 when resolving to major or maj7, and m7b5 when resolving to a minor, m7 or m6 - but this is not always the case.
+
+- **Examples in Progressions**
+  - **Am7 - Cmaj7 -> E7 - Am7 - Dm7 - G7 - Cmaj7**
+    - E7 is the secondary dominant of Am7. G7 is the secondary dominant of Cmaj7, and Dm7 is the ii of G7.
+  - **G7 - C -> Abm7 - Db7 - C**
+    - Db7 is the tritone sub of G7, and Abm7 is the ii of Db7.
+  - **Cm -> Dm7b5 - G7 - Cm**
+    - G7 is the secondary dominant of Cm, and Dm7b5 is the iim7b5 of G7.
 
 - **Barry Harris diminished approach**
 
@@ -179,3 +209,5 @@ Some ideas to add movement to chords.
 ## References {-}
 - [Superposition vs Substitution, with example over F blues (ps://www.jamieholroydguitar.com)](https://www.jamieholroydguitar.com/chord-substitution-vs-chord-superimposition/)
 - [Functioning & Static Dominants (justinguitar.com)](https://www.justinguitar.com/guitar-lessons/functioning-static-dominants-ja-024)
+- [Everything You Don’t Know About Minor Harmony in Jazz](https://www.jazzadvice.com/lessons/minor-keys-and-harmony-in-jazz/) - An excellent detailed explanation of how dominant chords work in minor-key progressions.
+- [Altered Chord (Wikipedia)](https://en.wikipedia.org/wiki/Altered_chord)
