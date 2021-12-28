@@ -46,7 +46,7 @@ It seems to be common in Jazz to omit the natural 11th in major and dominant cho
 - **Example 2: Superpositions over Fmaj7 in C Major**
   - **Fmaj7** has the notes F, A, C, E. The chord built on the 3rd (A) is **Am7** (notes A, C, E, G). Playing **Am7** over **Fmaj7** adds a 9th to the original **Fmaj7**. However, playing **Cmaj7** (C E G B) over **Fmaj7** adds the notes G (9th) and B (#11), not 9th and 11. This is because the C Major Scale has a natural B, not a Bb, so using it for building the new chord yields the #11 extension.
 
-In the following two tables, "Orig. Chord" is the original chord, "Subs built on chord tones" contains the diatonic chords built on the 3rd, 5th, and 7th (or flat 7th) degrees of the original chords, and "Extensions" contains all the extensions added (the sub on 7th degree provides all 3 extensions). The other set of columns provides an example in G. Concretely, for the original chord ii (Am7 in G major scale), the diatonic chord built on the 5th degree is the vi chord of the parent scale (Em7 in G major), and playing vi over ii yields extensions 9 and 11.
+In the following two tables, "Orig. Chord" is the original chord, "Sups built on chord tones" contains the diatonic chords built on the 3rd, 5th, and 7th (or flat 7th) degrees of the original chords, and "Extensions" contains all the extensions added (the sup on 7th degree contains all 3 extensions). The other set of columns provides an example in G. Concretely, for the original chord ii (Am7 in G major scale), the diatonic chord built on the 5th degree is the vi chord of the parent scale (Em7 in G major), and playing vi over ii yields extensions 9 and 11.
 
 ```{r echo=FALSE}
 display_sub_table <- function(odf, caption, cnames, abv_header, font_size) {
@@ -97,17 +97,17 @@ display_sub_table(odf = hm_scale_sups_df, caption = "Diatonic Substitutions with
 
 - Examples in Progressions
   - **In C major: Dm7 - G7 - C6 -> Am7 - Bm7b5 - Em7**
-    - Am7 starts on the 5th of Dm7, Bm7b5 starts on the 3rd of G7, Em7 starts on the 3rd of C6.
+    - **Am7** starts on the 5th of **Dm7**, **Bm7b5** starts on the 3rd of **G7**, **Em7** starts on the 3rd of **C6**.
     - The result is equivalent to **Dm11 - G9 - C9**.
   - **In C minor: Dm7b5 - G7 - Cm6 -> Fm7 - Bdim - Cm6**
-    - Fm7 starts on the 3rd of Dm7b5, Bdim starts on the 3rd of G7.
+    - **Fm7** starts on the 3rd of **Dm7b5**, **Bdim** starts on the 3rd of **G7**.
     - The result is equivalent to **Dm9b5 - G9 - Cm6**.
 
 ## Functioning Dominant Substitutions {-}
 
 In Jazz, functioning dominant 7th chords are frequently played differently than written on a lead sheet,  to add tension and interest.
 
-Using alterations (described in the **Altered Scale** section) is a standard way to add tension, and one way of remembering these alterations is to simply memorize voicings that contain them. Another way is to use chord substitutions - similarly to supersimpositions, we can use familiar shapes to generate new voicings.
+Using alterations (described in the **Altered Scale** section) is a standard way to add tension, and one way of remembering these alterations is to simply memorize new voicings that contain them. Another way is to use chord substitutions - similarly to supersimpositions, we can use familiar shapes to generate new voicings.
 
 ### Altered Scale {-}
 
@@ -120,9 +120,9 @@ The notes of the Altered Scale for a dominant are the same as the notes of the M
 Chords constructed using the Altered Scale contain the alterations in various combinations.
 
 - **Example: G7alt**
-  - Playing the Ab Melodic Minor (G Altered Scale) over G7 yields the notes G, Ab, Bb, Cb, Bb, Db, Eb, F. This scale contains G, Cb, and F, which are the Root, 3rd, and b7 of G7. It also contains Ab and Bb (b9 and #9) and Db and Eb (b5 and #5). To use alterations over the harmony for G7, play chords from Ab Melodic Minor over the G7.
+  - Playing the Ab Melodic Minor (G Altered Scale) over **G7** yields the notes **G, Ab, Bb, Cb, Bb, Db, Eb, F**. This scale contains **G**, **Cb**, and **F**, which are the Root, 3rd, and b7 of **G7**. It also contains **Ab** and **Bb** (b9 and #9) and **Db** and **Eb** (b5 and #5). To use alterations over the harmony for **G7**, play chords from Ab Melodic Minor over the **G7**.
 
-The following table summarizes alterations created by substituting a dominant chord with chords from the related Melodic Minor Scale. "MM Chord" is the chord in Melodic Minor, and "MM Intervals" are the MM intervals in that chord. "V7alt Intervals" are the intervals of the same notes in relation to the dominant chord. "V7alt Chord" is the new chord created by playing the MM chord over the dominant. The last 3 columns contain examples over the G7 chord.
+The following table summarizes alterations created by substituting a dominant chord with chords from the related Melodic Minor Scale. "MM Chord" is the chord in Melodic Minor, and "MM Intervals" are the MM intervals in that chord. "V7alt Intervals" are the intervals of the same notes in relation to the dominant chord. "V7alt Chord" is the new chord created by playing the MM chord over the dominant. The last 3 columns contain examples over a G7 chord.
 
 ```{r echo=FALSE}
 alt_subs <- data.frame(MMC = c("imMaj7", "iim6", "iim7", "III#5", "IV7", "V7", "vim7b5", "viim7b5"),
@@ -140,31 +140,28 @@ display_sub_table(odf = alt_subs, caption = "Functioning Dominant Substitutions 
                     abv_header = c(" " = 4, "Example in G" = 3),
                     font_size = 12)
 
-# - **Note on Resolutions to Major and Minor:** While it is not illegal to use alterations on a dominant resolving to a minor i chord, tension in such dominants is usually created by adding extensions from the Harmonic Minor Scale. For example, in the progression D7-Gm, superimposing F#dim7 from Gm Harmonic Minor over D7 creates a D7b9 sound. This is because in a minor V7-i in jazz, the V7 harmony usually comes from Harmonic Minor (and not Natural Minor, where the V would not be a dominant chord). To summarize: in major V7-I, alterations on the dominant come from outside the parent Major Scale, while in minor V7-i, they come from the parent Harmonic Minor Scale (and are extensions). 
-
-
 ```
 
 - **Examples in Progressions**
   - **In C major: Dm7 - G7 - C6 -> Dm7 - Abm6 - C6**
-    - Abm6 contains b9 and #5.
+    - **Abm6** contains b9 and #5.
   - **In Bb major: F7 - Bbmaj7 -> D7 - Bbmaj7**
-    - D7 contains #9, b5, and #5.
+    - **D7** contains #9, b5, and #5.
     
 
 ### Tritone {-}
 
 - **Examples in Progressions**
   - **A7 - Dm7 - G7 - C -> Eb7 - Dm7 - Db7 - C**
-    - The A7 and G7 are replaced with dominants a tritone away, creating a descending chromatic progression.
+    - The **A7** and **G7** are replaced with dominants a tritone away, creating a descending chromatic progression.
 
 ### Dominants b3 Away {-}
-A functioning dominant can be substituted by any other dominant that is located a multiple of a minor 3rd away. Barry Harris refers to this as "playing with your sisters and brothers". This is a different wa of thinking about alterations than using the Altered Scale.
+A functioning dominant can be substituted by any other dominant that is located a multiple of a minor 3rd away. Barry Harris refers to this as "playing with your sisters and brothers". This is a different way of thinking about alterations than using the Altered Scale.
 
 One of the substituting dominant chords (b5 away) is the tritone sub.
 
 - **Example 1: G7**
-  - Building a dom7 chord on the bb7 of G7 (3 multiples of b3 up) creates E7, which contains the notes E, Ab, B, D. These are 6, b9, 3, and 5 in reference to G7 - so substituting E7 creates a G7 chord with with 13 and b9 notes.
+  - Building a dom7 chord on the bb7 of **G7** (3 multiples of b3 up) creates **E7**, which contains the notes **E**, **Ab**, **B**, **D**. These are 6, b9, 3, and 5 in reference to **G7** - so substituting **E7** creates a **G7** chord with with 13 and b9 notes.
 
 In the following table, "Sub Chord" is the substitute chord (with the first row simply being the original chord), "Orig. Chord Degrees" are the degrees of the sub in relation to the original chord, and the last two columns show examples over G7.
 
@@ -183,7 +180,7 @@ display_sub_table(odf = d7_b3_sub_df, caption = "Functioning Dominant Substituti
 
 - **Examples in Progressions**
   - **A7 - Dm7 - G7 - C -> C7 - Dm7 - Bb7 - C**
-    - A7 is replaced with C7 (built on bb7), and G7 is replaced with Bb7 (built on b3).
+    - **A7** is replaced with **C7** (built on bb7), and **G7** is replaced with **Bb7** (built on b3).
 
 
 
@@ -197,11 +194,11 @@ This section describes a different approach to substitutions - instead of replac
 
 - **Examples in Progressions**
   - **Am7 - Cmaj7 -> E7 - Am7 - Dm7 - G7 - Cmaj7**
-    - E7 is the secondary dominant of Am7. G7 is the secondary dominant of Cmaj7, and Dm7 is the ii of G7.
+    - **E7** is the secondary dominant of **Am7**. **G7** is the secondary dominant of **Cmaj7**, and **Dm7** is the ii of **G7**.
   - **G7 - C -> Abm7 - Db7 - C**
-    - Db7 is the tritone sub of G7, and Abm7 is the ii of Db7.
+    - **Db7** is the tritone sub of **G7**, and **Abm7** is the ii of **Db7**.
   - **Cm -> Dm7b5 - G7 - Cm**
-    - G7 is the secondary dominant of Cm, and Dm7b5 is the iim7b5 of G7.
+    - **G7** is the secondary dominant of **Cm**, and **Dm7b5** is the iim7b5 of **G7**.
 
 - **Barry Harris diminished approach**
 
