@@ -3,11 +3,5 @@ tab:unnamed-chunk-3
 tab:unnamed-chunk-4
 tab:unnamed-chunk-5
 diatonic-chords-in-major-and-minor-scales
-chord-superimposition-and-substitution
-diatonic-superimpositions
-melodic-minor-for-functioning-dominants
-tritone-substitution
-functioning-dominant-subsitions-b3-away
-adding-movement-to-a-chord
-references-1
+chord-substitution
 resources
