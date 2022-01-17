@@ -125,7 +125,7 @@ Chords constructed using the Altered Scale contain the alterations in various co
 The following table summarizes alterations created by substituting a dominant chord with chords from the related Melodic Minor Scale. "MM Chord" is the chord in Melodic Minor, and "MM Intervals" are the MM intervals in that chord. "V7alt Intervals" are the intervals of the same notes in relation to the dominant chord. "V7alt Chord" is the new chord created by playing the MM chord over the dominant. The last 3 columns contain examples over a G7 chord.
 
 ```{r echo=FALSE}
-alt_subs <- data.frame(MMC = c("imMaj7", "iim6", "iim7", "III#5", "IV7", "V7", "vim7b5", "viim7b5"),
+alt_subs <- data.frame(MMC = c("imMaj7", "im6", "iim7", "III#5", "IV7", "V7", "vim7b5", "viim7b5"),
                     MMint = c("R-b3-5-7", "R-b3-5-6", "R-b3-5-b7", "R-3-#5-7", "R-3-5-b7", "R-3-5-b7", "R-b3-b5-b7", "R-b3-b5-b7"),
                     V7int = c("b9-3-#5-R", "b9-3-#5-b7", "#9-b5-b7-b9", "3-#5-R-#9", "b5-b7-b9-3", "#5-R-#9-b5", "b7-b9-3-#5", "R-#9-b5-b7"),
                     V7ch = c("V7b9#5", "V7b9#5", "V7b9#9b5", "V7#9#5", "V7b9b5", "V7#9b5#5", "V7b9#5", "V7#9b5"),
@@ -204,7 +204,7 @@ This section describes a different approach to substitutions - instead of replac
 
 
 ## References {-}
-- [superimposition vs Substitution, with example over F blues (ps://www.jamieholroydguitar.com)](https://www.jamieholroydguitar.com/chord-substitution-vs-chord-superimposition/)
+- [Superimposition vs Substitution, with example over F blues (ps://www.jamieholroydguitar.com)](https://www.jamieholroydguitar.com/chord-substitution-vs-chord-superimposition/)
 - [Functioning & Static Dominants (justinguitar.com)](https://www.justinguitar.com/guitar-lessons/functioning-static-dominants-ja-024)
 - [Everything You Don’t Know About Minor Harmony in Jazz](https://www.jazzadvice.com/lessons/minor-keys-and-harmony-in-jazz/) - An excellent detailed explanation of how dominant chords work in minor-key progressions.
 - [Altered Chord (Wikipedia)](https://en.wikipedia.org/wiki/Altered_chord)
