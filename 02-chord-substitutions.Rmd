@@ -208,7 +208,7 @@ This section describes a different approach to substitutions - instead of replac
 ## Chord shape equivalence {-}
 Certain drop2 chord grips on the guitar can be thought of as inversions of other chords. This reduces the number of shapes to learn.
 
-- **m6 and m7b5**: The drop2 chord built on the m3 of a m7b5 chord is an m6 drop2 chord in root inversion. Because of this, m6 chords can be played with m7b5 shapes, and vice versa. For example, **Em6** is an inversion of **C#m7b5**: **Em6** contains the notes E G B C#, and **C#m7b5** contains C# E G B.
+- **m6, m7b5, and 6#11**: The drop2 chord built on the m3 of a m7b5 chord is an m6 drop2 chord in root inversion. Because of this, m6 chords can be played with m7b5 shapes, and vice versa. In addition, the drop2 chord built on the b5 of the m7b5 is a maj6#11 drop2 chord in root inversion. For example, **Em6** is an inversion of **C#m7b5**: **Em6** contains the notes E G B C#, and **C#m7b5** contains C# E G B. **G6#11** (shape: x 10 11 9 12 x) is an inversion as well.
 - **maj6 and m7**: Similarly, The drop2 chord built on the m3 of a m7 chord is a maj6 chord in root inversion. For example, **C6** is an inversion of **Am7**: **C6** contains the notes C E G A, and **Am6** contains A C E G.
 - **dim7**: Any diminished shape can be moved by increments of minor 3rds to get its inversions. For example, **Ddim7**, **Fdim7**, **Abdim7**, and **Bdim7** are all inversions of each other. This is why there are really only 3 different diminished chords.  
 
