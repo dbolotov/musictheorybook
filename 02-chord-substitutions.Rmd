@@ -188,7 +188,7 @@ display_sub_table(odf = d7_b3_sub_df, caption = "Functioning Dominant Substituti
 
 
 ## Adding movement to a chord {-}
-This section describes a different approach to substitutions - instead of replacing a chord with another chord, insert other chords before the original chord, breaking up how long the original chord lasts.
+This section describes a different approach to substitutions - instead of replacing a chord with another chord, add other chords to make a new mini-progression, breaking up how long the original chord lasts.
 
 ### Secondary dominants and ii chords {-}
   - Major, minor, and dominant chords (not m7b5) can be preceded by a secondary dominant - a dominant chord that resolves a 4th up (or 5th down). The secondary dominants (besides the main V) are not in the original scale, but can be played before their resolution chords to add interest. For example, the V chord in C Major is G7 (the dominant of Cmaj7); Dm7's secondary dominant is A7, Em7's is B7, and so on.

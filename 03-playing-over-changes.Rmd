@@ -1,11 +1,13 @@
 # Playing over Changes
 
-## Soloing over fast harmonic rhythm {-}
+## Soloing over Fast Harmonic Rhythm {-}
 It is not necessary to outline every single chord in a progression, especially when the changes are coming at a fast pace ("Outline" here means to play notes that differentiate a particular chord from the others before and after it. For example, soloing over **Am7-D7-Gmaj7**, one might emphasize the G (b7) on **Am7** since it will resolve nicely to F# (3) on **D7**).
 
-With a fast tempo and/or harmonic rhythm, it is sometimes possible to reduce the structure down to a few scales or arpeggios. This also applies in slower tempos, but in that case, it would be possible to emphasize the chord changes more.
+With a fast tempo and/or harmonic rhythm, it is sometimes possible to reduce the song structure down to a few scales or arpeggios. This also applies to slower tempos, but in that case, it would be possible to emphasize the chord changes anyway.
 
-The following examples discuss specific progressions with a few examples for each. These reductions present examples without clashing notes, which is not always desirable. For example, playing the dominant scale over ii-V sounds good (D dominant over Am7-D7), but so might using a dominant a minor 3rd away (F dominant over Am7-D7), even though some notes in F dominant might clash with Am7. The superimpositions and substitutions discussed in the previous chapter work as well (e.g. playing the altered scale over a fast ii-V).
+The following list covers some common progressions, and some example arpeggios and scales over each.
+
+These reductions present examples without clashing notes, which is not always desirable. For example, playing the dominant scale over ii-V sounds good (D dominant over Am7-D7), but so might using a dominant a minor 3rd away (F dominant over Am7-D7), even though some notes in F dominant might clash with Am7. Additionally, the superimpositions and substitutions discussed in the previous chapter work as well (e.g. playing the altered scale over a fast ii-V).
 
 - **ii-V**
   - ii-V can be thought of as just V.
@@ -30,11 +32,12 @@ The following examples discuss specific progressions with a few examples for eac
   - I-iii can be thought of as ether just I or just iii.
     - Arpeggios over I-iii:
       - Imaj7: results in notes b6-R-b3-5 over iii. Example: Cmaj7 over Cmaj7-Em7.
-      - iiim7: results in notes 3-5-7-9 over I.
+      - iiim7: results in notes 3-5-7-9 over I. Example: Em7 over Cmaj7-Em7.
     - Scale: the I major scale is the Phrygian mode when played over iii. Example: C major scale over Cmaj7-Em7.
     
 
 ### Examples over tunes
 
-- Rhythm Changes
+- Rhythm Changes (original rhythm)
+  - A large part of this tune is based on a I-vi-ii-V  progression spanning two bars **Bb6 - Gm7 | Cm7 - F7**. This can be simplified to **Bb6 | F7** or **Gm7 | F7**, reducing the number of chords from 2 to 1 per bar. Substitutions can also be used over the F7 bar.
 
