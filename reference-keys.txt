@@ -5,5 +5,4 @@ tab:unnamed-chunk-5
 diatonic-chords-in-major-and-minor-scales
 chord-substitution
 playing-over-changes
-examples-over-tunes
 resources
